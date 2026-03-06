@@ -1,0 +1,46 @@
+{
+  // 启用 GitHub Copilot Agent 模式（VS Code 1.106+）
+  "chat.agent.enabled": true,
+
+  // 启用实验性子 Agent（subagent）功能，支持 CEO 调度其他 Agent
+  "github.copilot.chat.agent.runTasks": true,
+
+  // 编辑器基础配置
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // TypeScript 配置
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "relative",
+
+  // Copilot 指令配置
+  "copilot.comments.instructions.enable": true,
+
+  // 文件排除配置
+  "files.exclude": {
+    "**/.github": false,
+    "**/node_modules": true,
+    "**/.git": true
+  },
+
+  // 搜索排除配置
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.git": true
+  },
+
+  // Python 配置（如果需要跨平台开发）
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+
+  // 核心指令文件路径 - Copilot 在每个新任务前应自动读取
+  "projectInstructions": [
+    ".github/copilot-instructions.md",
+    ".github/Structural_Architect-instructions.md"
+  ],
+  "github.copilot.chat.switchAgent.enabled": true,
+  "github.copilot.chat.copilotMemory.enabled": true,
+  "github.copilot.chat.agent.autoFix": true
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>待办任务清单</title>
+    <style>
+      /* 防止拖拽选中和右键菜单，提升桌面端体验 */
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
