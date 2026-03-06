@@ -76,7 +76,7 @@
 
 ```powershell
 # 1. 克隆项目
-git clone <仓库地址>
+git clone https://github.com/mianmianlingqi/Task_List_APP.git
 cd Task_List_APP
 
 # 2. 安装前端依赖
